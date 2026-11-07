@@ -68,7 +68,10 @@ Don't want to read 400 lines? (Though we'd love you to.)
 
 ### Open source desktop apps
 
-- **[Freeplane](https://github.com/freeplane/freeplane)** — GPL-2.0 · Win/macOS/Linux (Java) · 🟢 (~4.5k★, active Nov 2026) — The most feature-rich OSS mind mapper: FreeMind successor with LaTeX/markdown node content, scripting (Groovy), addons, encrypted maps, outliner views, project management features, and a built-in **MCP server** for AI workflows. Exports Markdown, OPML, Asciidoc, LaTeX, Office formats, PDF, SVG, PNG, XHTML; a completed XSD for its file format is documented at [docs.freeplane.org](https://docs.freeplane.org).
+- **[Freeplane](https://github.com/freeplane/freeplane)** — GPL-2.0 · Win/macOS/Linux (Java) · 🟢 (~4.5k★, active Nov 2026) — The most feature-rich OSS mind mapper, successor to FreeMind.
+    - LaTeX/markdown in node text, Groovy scripting, addons, encrypted maps, outliner views, project-management features
+    - Built-in **MCP server** for AI workflows (docs §4.5)
+    - Exports: Markdown, OPML, Asciidoc, LaTeX, Office formats, PDF, SVG, PNG, XHTML; completed format XSD at [docs.freeplane.org](https://docs.freeplane.org)
 - **[FreeMind](https://freemind.sourceforge.io)** — GPL-2.0+ · Win/macOS/Linux (Java) · 🔴 (last release 1.0.1, 2014) — The genre's granddaddy (still ~2k downloads/week on SourceForge). Imported MindManager `.mmap` as early as 0.9b9. Superseded by Freeplane; see [Historical](#historical--unmaintained-but-influential).
 - **[View Your Mind (VYM)](https://github.com/insilmaril/vym)** — GPL-2.x (SPDX "Other") · Win/macOS/Linux (Qt/C++) · 🟢 (~200★, active Oct 2026) — Veteran Java-free mapper with strong linking and export (PNG/SVG/PDF); rare SourceForge-era project still maintained.
 - **[Minder](https://github.com/phase1geo/Minder)** — GPL-3.0 · Linux (GTK/Vala, elementary OS flagship) · 🟢 (~1.2k★, active Nov 2026) — Polished native mapper with themes, node notes/tasks, auto-layout, markdown/PDF/SVG export.
@@ -89,12 +92,20 @@ Don't want to read 400 lines? (Though we'd love you to.)
 ### Open source web / self-hosted apps
 
 - **[Drawnix](https://github.com/plait-board/drawnix)** — MIT · Web (local-first) · 🟢 (~15k★, active) — All-in-one FOSS whiteboard with a genuinely good **mindmap module** (on the Plait framework): mindmap + flowchart + freehand + Mermaid import. The best "open-source Miro-with-mindmaps" today.
-- **[AFFiNE](https://github.com/toeverything/AFFiNE)** — BlockSuite core MPL-2.0/MIT (mixed) · Web + self-host + desktop · 🟢 (~74k★, very active) — "More than Notion and Miro": docs + canvas + databases. Its mind map is a **first-class BlockSuite canvas element** (own `mindmap` schema, snapshot module, 5 preset layout styles — see `@blocksuite/affine-model`), built on Yjs CRDT so realtime collab is intrinsic. AI mind-map generator built in.
-- **[Simple Mind Map (app)](https://wanglin2.github.io/mind-map/)** ([repo](https://github.com/wanglin2/mind-map)) — MIT (lib; "Pro" companion is commercial) · Web/self-host · 🟢 (~12.9k★, active Aug 2026) — Commercial-grade web mindmap editor + the library behind it: many layouts, ~25 builtin plugins (minimap, formulas via KaTeX, watermark, yjs+y-webrtc collaboration, web-worker render), imports XMind/OPML/markdown, exports PNG/SVG/PDF/JSON/SMMD/markdown. Docs mostly Chinese.
+- **[AFFiNE](https://github.com/toeverything/AFFiNE)** — BlockSuite core MPL-2.0/MIT (mixed) · Web + self-host + desktop · 🟢 (~74k★, very active) — "More than Notion and Miro": docs + canvas + databases.
+    - Mind map is a **first-class BlockSuite canvas element**: own `mindmap` schema, snapshot module, 5 preset layout styles (`@blocksuite/affine-model`)
+    - Yjs CRDT underneath → intrinsic realtime collaboration, and a built-in AI mind-map generator
+- **[Simple Mind Map (app)](https://wanglin2.github.io/mind-map/)** ([repo](https://github.com/wanglin2/mind-map)) — MIT (lib; "Pro" companion is commercial) · Web/self-host · 🟢 (~12.9k★, active Aug 2026) — Commercial-grade web mindmap editor + the library behind it.
+    - Many layouts; ~25 optional plugins: minimap, KaTeX formulas, watermark, focus mode, web-worker rendering
+    - Collaboration via `yjs` + `y-webrtc`
+    - Imports XMind/OPML/markdown; exports PNG/SVG/PDF/JSON/SMMD/markdown
+    - Docs mostly Chinese (i18n partial)
 - **[my-mind](https://github.com/ondras/my-mind)** — MIT · Web (single-page, offline-capable) · 🟢 (~3.4k★, active Oct 2026) — Elegant keyboard-centric single-author classic by Ondřej Žára; supports XMind/FreeMind import, storage in localStorage/Google Drive.
 - **[TeamMapper](https://github.com/b310-digital/teammapper)** — AGPL-family *(verify)* · Self-host (NestJS) · 🟢 (~520★, very active Nov 2026) — Collaborative shared mind-mapping sessions; popular in education.
 - **[mindmaps](https://github.com/drichard/mindmaps)** — MIT · Web (static/offline HTML5) · 🔴 (dormant 2023, ~2.9k★) — "Open source, offline capable, mind mapping application." Root of TeamMapper.
-- **[WiseMapping](https://www.wisemapping.com/)** ([repo](https://github.com/wisemapping/wisemapping-open-source), Java) — ⚠️ custom **WiseMapping Public License** (Apache-2.0 + mandatory "powered by WiseMapping" attribution, waivable by email) · Web + Docker self-host + new Desktop offline app · 🟢 (active Oct 2026) — The veteran (2007) collaborative OSS mindmap *suite*; imports/exports Freeplane/XMind/MindManager; 200k+ Docker pulls; ships a ChatGPT "Mind Map Copilot" GPT.
+- **[WiseMapping](https://www.wisemapping.com/)** ([repo](https://github.com/wisemapping/wisemapping-open-source), Java) — ⚠️ custom **WiseMapping Public License** — ⚠️ Apache-2.0 **plus a mandatory "powered by WiseMapping" attribution** on every screen (removable via email waiver) · Web + Docker self-host + Desktop · 🟢 (active Oct 2026)
+    - The veteran (2007) collaborative OSS mindmap *suite*; 200k+ Docker pulls
+    - Imports/exports Freeplane/XMind/MindManager; ships a ChatGPT "Mind Map Copilot" GPT
 - **[Mindmapp](https://github.com/cedoor/mindmapp)** — AGPL-3.0 · Web/Electron (Angular) · 🟡 (~520★) — Simple, minimalist web mind mapper.
 - **[Blink Mind Desktop](https://github.com/awehook/blink-mind-desktop)** — license *(unverified on repo)* · 🟡 (~730★, dormant 2022) — Electron mindmap + outline app; also has a VS Code extension.
 - **[Neurite](https://github.com/satellitecomponent/Neurite)** — license *(unverified)* · 🟡 (~2.2k★, semi-active Mar 2026) — "Fractal Graph-of-Thought" rhizomatic mind-mapping web desktop with AI agents.
@@ -106,7 +117,12 @@ Don't want to read 400 lines? (Though we'd love you to.)
 
 ### Text- & markdown-based map generators
 
-- **[markmap](https://github.com/markmap/markmap)** — MIT · 🟢 (~13.8k★, very active Nov 2026) — *The* Markdown → interactive mindmap tool. Ecosystem: `markmap-cli` (`npx markmap-cli notes.md` → offline HTML), `markmap-lib`, `markmap-view` (d3-based), `markmap-autoloader` (turns `.markmap` code blocks into maps), `markmap-toolbar`, web components (`<markmap-view>`), plugins for katex/prism; layouts: tree / two-sided / org-chart via frontmatter; `markmap-html-parser` for HTML outlines. ⚠️ Nov 2026 restructure introduced scoped packages (`@markmap/parse`, `@markmap/core`, `@markmap/canvas`, `@markmap/page`) alongside legacy `markmap-*` names. Related: [markmap-vscode](https://github.com/markmap/markmap-vscode), [mkdocs_markmap](https://github.com/markmap/mkdocs_markmap), [coc-markmap](https://github.com/markmap/coc-markmap), community GitHub Action [bssm-oss/markmap-actions](https://github.com/bssm-oss/markmap-actions) (there is no official `markmap-action`).
+- **[markmap](https://github.com/markmap/markmap)** — MIT · 🟢 (~13.8k★, very active Nov 2026) — *The* Markdown → interactive mindmap tool.
+    - CLI: `npx markmap-cli notes.md` → standalone, fully-offline interactive HTML
+    - Layouts via frontmatter: tree / two-sided / org-chart; themes + `<!-- markmap: fold -->` comments
+    - Ecosystem packages: `markmap-lib`, `markmap-view` (d3-based), `markmap-autoloader`, `markmap-toolbar`, `markmap-html-parser`, `<markmap-view>` web component, katex/prism plugins
+    - ⚠️ Nov 2026 restructure added scoped names (`@markmap/parse`, `@markmap/core`, `@markmap/canvas`, `@markmap/page`) *alongside* the legacy `markmap-*` packages
+    - Siblings: [markmap-vscode](https://github.com/markmap/markmap-vscode), [mkdocs_markmap](https://github.com/markmap/mkdocs_markmap), [coc-markmap](https://github.com/markmap/coc-markmap); community action [bssm-oss/markmap-actions](https://github.com/bssm-oss/markmap-actions) (no official action exists)
 - **[Mermaid — `mindmap` diagram](https://mermaid.js.org/syntax/mindmap.html)** ([repo](https://github.com/mermaid-js/mermaid)) — MIT · 🟢 (~91k★) — Indented-text `mindmap` syntax rendered natively inside GitHub, GitLab, VS Code, Docusaurus, etc. CLI renderer: [mermaid-cli](https://github.com/mermaid-js/mermaid-cli) (`mmdc` → SVG/PNG/PDF).
 - **[PlantUML — `@startmindmap`](https://plantuml.com/mindmap)** ([repo](https://github.com/plantuml/plantuml)) — GPL-3.0+/EPL · Java · 🟢 — Org-chart-style mind maps in PlantUML syntax with a huge server-integration ecosystem.
 - **[Argdown](https://argdown.org/)** ([repo](https://github.com/argdown/argdown)) — MIT *(verify in repo)* · Web/VS Code/CLI · 🟢 (v2.0 released Dec 2025) — Markdown-family syntax for **argument maps**: `+`/`-` support and attack relations between claims; ArgVu font with dedicated ligatures; PDF/SVG/web-component export. (Also listed under [Argument mapping](#argument-mapping).)
@@ -133,10 +149,19 @@ Don't want to read 400 lines? (Though we'd love you to.)
 
 For embedding mind maps in your own apps. Rendering-approach and dependency details verified from npm registry metadata (Nov 2026).
 
-- **[mind-elixir](https://github.com/SSShooter/mind-elixir-core)** (npm `mind-elixir`) — MIT · 🟢 (v6.0.0, Nov 2026) — Framework-agnostic TypeScript, DOM+SVG, **zero runtime dependencies**. Data: plain `{topic, children[]}` tree; rich plugin contract (`mind.install(plugin)`, event bus `mind.bus`, context-menu extension; `@mind-elixir/plugin-*` for richtext/i18n/layout/hotkeys and official `import-xmind` / `import-freemind` / `import-markdown` / `export-xmind` / `export-html` / image-export plugins; community `@erseco/mind-elixir-export-mermaid`). Core exports SVG/PNG/HTML; inline markdown in node topics. Docs: [docs.mind-elixir.com](https://docs.mind-elixir.com), hosted app: [app.mind-elixir.com](https://app.mind-elixir.com).
-- **[Simple Mind Map (library)](https://github.com/wanglin2/mind-map)** (npm `simple-mind-map`) — MIT · 🟢 (0.14.x, Jul 2026) — SVG rendering on `@svgdotjs/svg.js`; deps include `quill` (rich text), `katex`, `jszip`, `pdf-lib`, `xml-js` (xmind/opml parsing), `mdast-util-from-markdown`, and `yjs` + `y-webrtc` for realtime collaboration. ~25 optional plugins, theming system, web-worker rendering for large maps.
-- **[jsMind](https://github.com/hizzgdev/jsmind)** (npm `jsmind`) — **BSD-3-Clause** (not MIT!) · 🟡 (0.9.1, Dec 2025) — Vanilla ES6, no framework, DOM/CSS rendering; UMD/legacy builds. Data model: `{meta, format: 'node_tree'|'node_array', data}`. Plugin system (`$jm.plugin.register`) with official `draggable-node` and `screenshot` plugins in-tree. Heir to the Baidu KityMinder ecosystem.
-- **[kityminder-core](https://github.com/fex-team/kityminder-core)** — BSD-3-Clause · 🔴 — Baidu's mindmap engine (`fex-team`): `kityminder` (~4.8k★, frozen 2019), `kityminder-editor` (~3.2k★), `kityminder-core` (~1.4k★). `.km` JSON format lives on via DesktopNaotu, VS Code souche extension, etc.
+- **[mind-elixir](https://github.com/SSShooter/mind-elixir-core)** (npm `mind-elixir`) — MIT · 🟢 (v6.0.0, Nov 2026) — Framework-agnostic TypeScript mindmap core. **Zero runtime dependencies.**
+    - Rendering: DOM + SVG; data model: plain `{topic, children[]}` tree; `getData()` / `init(data)` / inline markdown topics
+    - Plugin contract: `mind.install(plugin)`, event bus `mind.bus`, context-menu slots; `@mind-elixir/plugin-*` (richtext, i18n, layout, hotkeys)
+    - Format plugins: `import-xmind`, `import-freemind`, `import-markdown`, `export-xmind`, `export-html`, image export; community `@erseco/mind-elixir-export-mermaid`
+    - Core exports SVG/PNG/HTML · Docs: [docs.mind-elixir.com](https://docs.mind-elixir.com) · Hosted app: [app.mind-elixir.com](https://app.mind-elixir.com)
+- **[Simple Mind Map (library)](https://github.com/wanglin2/mind-map)** (npm `simple-mind-map`) — MIT · 🟢 (0.14.x, Jul 2026) — SVG rendering on `@svgdotjs/svg.js`; the full-featured sibling of [mind-elixir](https://github.com/SSShooter/mind-elixir-core).
+    - Deps: `quill` (rich text), `katex`, `jszip`, `pdf-lib`, `xml-js` (xmind/opml parsing), `mdast-util-from-markdown`, `yjs` + `y-webrtc` (realtime)
+    - ~25 optional plugins, theming system, web-worker rendering for large maps
+- **[jsMind](https://github.com/hizzgdev/jsmind)** (npm `jsmind`) — **BSD-3-Clause** (not MIT!) · 🟡 (0.9.1, Dec 2025) — Vanilla ES6 mindmap library from the Baidu KityMinder ecosystem.
+    - No framework, DOM/CSS rendering, UMD/legacy builds; data model: `{meta, format: 'node_tree'|'node_array', data}`
+    - Plugin system (`$jm.plugin.register`) with official `draggable-node` and `screenshot` plugins in-tree
+- **[kityminder-core](https://github.com/fex-team/kityminder-core)** — BSD-3-Clause · 🔴 — Baidu's mindmap engine (`fex-team`, 2012-era): the `.km` JSON format lives on via DesktopNaotu and the VS Code extensions below.
+    - Family: `kityminder` (~4.8k★, frozen 2019), `kityminder-editor` (~3.2k★), `kityminder-core` (~1.4k★)
 - **[BlockSuite](https://github.com/toeverything/blocksuite)** (npm `@blocksuite/*`) — MPL-2.0/MIT family · 🟢 — AFFiNE's editor toolkit; mind map is a native element type (`@blocksuite/affine-model` ships `elements/mindmap/` with 5 style presets + snapshot modules); Yjs-driven.
 - **[React Flow / Svelte Flow](https://github.com/xyflow/xyflow)** (npm `@xyflow/react`, `@xyflow/svelte`) — MIT · 🟢 (~39k★) — The go-to node-graph UI library; not mindmap-specific (no first-party mindmap layout — verified), but countless mindmap editors are built on it.
 - **[Vue Flow](https://github.com/bcakmakoglu/vue-flow)** (npm `@vue-flow/core`) — MIT · 🟢 — Vue sibling of React Flow; mindmap canvases are userland examples.
@@ -294,37 +319,54 @@ Tree-editing is mind mapping's linear twin; many mappers import/export these for
 
 ### Formats
 
-| Format | Body | Notes |
+Quick reference (full structure details below):
+
+| Format | Body | Primary users |
 |---|---|---|
-| **FreeMind `.mm`** | XML (`<map version="…">` → nested `<node TEXT="…">` with `<icon/>`, `<edge/>`, `<richcontent TYPE="NOTE">` XHTML) | Never fully formally specified (partial wiki docs; an XSD exists in the FreeMind SVN integration branch); versions `0.7.1`–`1.0.1`; `.mmz` = zipped variant. `\*.mm` remains the de-facto interchange lingua franca. |
-| **Freeplane `.mm`** (dialect) | XML superset | Adds `<attribute*>`, `<hook>`, connector labels on `<arrowlink>`, encrypted maps, LaTeX/markdown/formula nodes. Version strings like `freeplane 1.1.x`; can export "old format". A completed XSD is published at [docs.freeplane.org](https://docs.freeplane.org/attic/old-mediawiki-content/Current_Freeplane_File_Format.html). |
-| **XMind `.xmind`** | ZIP archive | Two generations: **XMind 8** (legacy: `content.xml` XML + manifest/meta/styles) and **XMind 2020+/"Zen"** (`content.json` + `metadata.json`, `children.attached` structure *(verify exact keys)*). |
-| **MindManager `.mmap`** | ZIP of XML (v5+) | `ap:Map → ap:OneTopic → ap:Topic` tree, relationships in `ap:Relationships`; v4 and older = raw XML. |
-| **KityMinder `.km`** | JSON | Baidu Naotu format; `.km` JSON keeps living via DesktopNaotu, VS Code extensions (see `@ljheee/xmind-parser` ↔ `.km` converter). |
-| **OPML 2.0** | XML outline | `<outline text="">` nesting; spec at [opml.org/spec2](https://opml.org/spec2.opml). Read/written by MindNode, Freeplane, XMind, Workflowy, Coggle (via API, official `coggle-opml-importer` sample), pandoc. Recommended npm writer: [opml (Dave Winer)](https://github.com/scripting/opmlpackage); PyPI `opml` lib is read-only & 2008-era — prefer hand-rolled ElementTree for writing. |
-| **Markdown outline** | headings/indented bullets | De-facto import format everywhere: markmap, mind-elixir (`import-markdown` plugin), Simple Mind Map (`mdast-util-from-markdown`), MindNode export, mindr. |
-| **Org `.org`** | outline | Bridges: `Org2OPML` (org → OPML for MindNode/FreeMind), `freemind.el`, `mm2outline`/`outline2mm` Perl scripts (FreeMind wiki), org-mind-map rendering. |
-| **Coggle** | server-side JSON | No published file format; diagrams live server-side; API exposes node objects `{_id, text, offset{x,y}}`. |
-| **mind-elixir data** | JSON | `{topic, id, style, tags, icons, hyperLink, image, expanded, children[]}`; `getData()` / `init(data)`; inline-markdown topics. |
-| **jsMind data** | JSON | `{meta, format: 'node_tree'\|'node_array', data}`; `node_tree` = `{id, topic, children[]}`. |
-| **markmap I/O** | markdown ⇄ SVG/HTML | Input = markdown (headings/bullets → branches, other blocks → popovers), frontmatter options (`theme`, `layout`, `foldLevel`), `<!-- markmap: fold -->` comments; output = offline HTML, SVG, PNG, or `<markmap-view>` web component. |
+| **FreeMind `.mm`** / `.mmz` (zipped) | XML | FreeMind, Freeplane; the de-facto interchange standard |
+| **Freeplane `.mm`** dialect | XML superset | Freeplane (superset with extra elements) |
+| **XMind `.xmind`** | ZIP archive | XMind 8 ("legacy") and XMind 2020+/"Zen" (JSON) |
+| **MindManager `.mmap`** | ZIP of XML (v5+) | MindManager |
+| **KityMinder `.km`** | JSON | Baidu Naotu family, DesktopNaotu, VS Code extensions |
+| **OPML 2.0** | XML outline | MindNode, Freeplane, XMind, Workflowy, pandoc |
+| **Markdown outline** | headings / indented bullets | markmap, mind-elixir, Simple Mind Map, MindNode, mindr |
+| **Org `.org`** | outline | Emacs; bridged to OPML/`.mm` |
+| **Coggle** | server-side JSON | Coggle (API objects `{_id, text, offset}`) |
+| **mind-elixir / jsMind / markmap** | JSON / markdown | see their entries above |
+
+<details>
+<summary><strong>Full format structure details</strong></summary>
+
+- **FreeMind `.mm`** — XML: `<map version="…">` → nested `<node TEXT="…">` with `<icon/>`, `<edge/>`, `<richcontent TYPE="NOTE">` XHTML. Versions `0.7.1`–`1.0.1`. ⚠️ Never fully formally specified (an XSD exists only in the FreeMind SVN integration branch) — yet it remains the interchange lingua franca of the genre.
+- **Freeplane `.mm` dialect** — XML superset: adds `<attribute*>`, `<hook>`, connector labels on `<arrowlink>`, encrypted maps, LaTeX/markdown/formula nodes. Version strings like `freeplane 1.1.x`; can also export "old format". Completed XSD published at [docs.freeplane.org](https://docs.freeplane.org/attic/old-mediawiki-content/Current_Freeplane_File_Format.html).
+- **XMind `.xmind`** — ZIP archive, two generations: **XMind 8** (legacy: `content.xml` XML + manifest/meta/styles) and **XMind 2020+/"Zen"** (`content.json` + `metadata.json`; `children.attached` structure *(verify exact keys)*).
+- **MindManager `.mmap`** — ZIP of XML (v5+): `ap:Map → ap:OneTopic → ap:Topic` tree, relationships in `ap:Relationships`; v4 and older = raw XML.
+- **KityMinder `.km`** — JSON; kept alive by DesktopNaotu and `@ljheee/xmind-parser`.
+- **OPML 2.0** — XML outline (`<outline text="">` nesting); spec at [opml.org/spec2](https://opml.org/spec2.opml). Recommended npm writer: [opml (Dave Winer)](https://github.com/scripting/opmlpackage); the PyPI `opml` lib is read-only & 2008-era — prefer hand-rolled ElementTree for writing.
+- **Markdown outline** — headings and indented bullets; the de-facto import format everywhere.
+- **Org `.org`** — bridges: `Org2OPML` (org → OPML for MindNode/FreeMind), `freemind.el`, `mm2outline`/`outline2mm` Perl scripts (FreeMind wiki), org-mind-map rendering.
+- **markmap I/O** — input: markdown (headings/bullets → branches, other blocks → popovers) with frontmatter (`theme`, `layout`, `foldLevel`); output: offline HTML, SVG, PNG, or the `<markmap-view>` web component.
+- **mind-elixir data** — JSON `{topic, id, style, tags, icons, hyperLink, image, expanded, children[]}`; inline-markdown topics.
+- **jsMind data** — JSON `{meta, format: 'node_tree'|'node_array', data}`; `node_tree` = `{id, topic, children[]}`.
+
+</details>
 
 ### Interop matrix
 
-Verified claims only; "(v)" = vendor claims, verify in-app.
+What each tool can **read**. (Export formats are listed in each tool's entry above.) Verified claims only; "(v)" = vendor claims — check in-app.
 
-| Tool | Opens `.mm` | Opens `.xmind` | Opens `.mmap` | OPML | Markdown | Exports |
-|---|---|---|---|---|---|---|
-| **Freeplane** | ✓ | — | ✓ (direct import, 0.9b9+) | ✓ (export; import v) | ✓ (export; import v) | MD/OPML/Asciidoc/LaTeX/Office/PDF/SVG/PNG/XHTML |
-| **FreeMind** | native | — | ✓ (0.9b9+) | — | — | via XSLT toolkit |
-| **XMind** | ✓ (import) | native | ✓ historically (v) | ✓ (official OPML→map flow, v) | v | PNG/SVG/PDF (+ formats above in-app) |
-| **MindNode** | ✓ | ✓ | — | ✓ (in & out) | ✓ | PDF/SVG/PNG/FreeMind/OPML/MD/TaskPaper/TextBundle |
-| **Coggle** | — | — | — | import via API only | text via API | PNG/SVG/PDF; Visio/FreeMind export (v) |
-| **mind-elixir** | ✓ (plugin) | ✓ (plugin, in+out) | — | — | ✓ (plugin) | SVG/PNG/HTML (+ plugins: xmind, mermaid, html) |
-| **Simple Mind Map** | ✓ (v) | ✓ (v) | — | ✓ (v) | ✓ | PNG/SVG/PDF/JSON/SMM/MD/XMind/OPML (v) |
-| **markmap** | — | — | — | via pandoc | ✓ (native input) | HTML/SVG/PNG |
-| **WiseMapping** | ✓ (v) | ✓ (v) | ✓ (v) | — | — | self-hosted web formats |
-| **pandoc** | — | — | — | ✓ (in+out) | ✓ | universal… |
+| Tool | `.mm` (FreeMind) | `.xmind` | `.mmap` | OPML | Markdown |
+|---|---|---|---|---|---|
+| **Freeplane** | ✓ | — | ✓ (direct import, 0.9b9+) | export; import (v) | export (v) |
+| **FreeMind** | native | — | ✓ (0.9b9+) | — | — |
+| **XMind** | ✓ (import) | native | historically (v) | ✓ (official flow, v) | (v) |
+| **MindNode** | ✓ | ✓ | — | ✓ (in & out) | ✓ |
+| **Coggle** | — | — | — | via API only | text via API |
+| **mind-elixir** | ✓ (plugin) | ✓ (plugin) | — | — | ✓ (plugin) |
+| **Simple Mind Map** | ✓ (v) | ✓ (v) | — | ✓ (v) | ✓ |
+| **markmap** | — | — | — | via pandoc | ✓ (native input) |
+| **WiseMapping** | ✓ (v) | ✓ (v) | ✓ (v) | — | — |
+| **pandoc** | — | — | — | ✓ (in + out) | ✓ |
 
 ### Converters & parsers (npm / PyPI / GitHub)
 
@@ -343,7 +385,8 @@ Verified claims only; "(v)" = vendor claims, verify in-app.
 | `coggle` (official) | Coggle API client | 2014-era, still canonical |
 | `json-to-freemind` | JSON → FreeMind `.mm` | |
 | `opml` (Winer), `opmlparser`, `opml-to-json`, `opml-generator`, `opml-to-markdown` (azu, OmniOutliner-flavored), `feedsmith` | OPML read/write ecosystem | |
-| `markmap-lib` / `markmap-view` / `markmap-cli` / new scoped `@markmap/parse`, `@markmap/render`, `@markmap/page`, `@markmap/canvas`, `@markmap/autoloader`, `@markmap/element` | markmap pipeline | ⚠️ monorepo *folders* still use legacy names — don't infer package names from repo paths |
+| `markmap-lib`, `markmap-view`, `markmap-cli` | markmap pipeline (legacy names) | ⚠️ monorepo *folders* still use legacy names — don't infer package names from repo paths |
+| `@markmap/parse`, `@markmap/render`, `@markmap/page`, `@markmap/canvas`, `@markmap/autoloader`, `@markmap/element` | markmap pipeline (new scoped names, Nov 2026) | |
 | ⚠️ trap packages | `freemind` (npm) is an unrelated web framework; `@xmindltd/xmindparser` **does not exist**; `modelicious` **does not exist** | don't cite these |
 
 **PyPI (Python)**
