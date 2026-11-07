@@ -463,20 +463,6 @@ PRs welcome — please keep one entry per line, in this shape:
 
 Mark anything you can't personally verify as *(verify)*. Confirm repos still exist before adding; note dead projects explicitly rather than silently dropping them — this list doubles as an archive of the genre.
 
-### Open verification TODOs
-
-Things flagged during research that a maintainer could pin down with a browser session:
-
-- [ ] Licenses marked *(unverified)* on: VUE, TeamMapper, Argdown, Neurite, MindGeniusAI, Mind-Map-Wizard, mdSilo, SmallSO, lx-doc, Blink Mind, Obsidian-Canvas-MindMap / obsidian-kity-mind, felisMindmap, org-graph-view, Kminder, TiddlyMap
-- [ ] XMind Zen-era `content.json` exact key paths (`sheets[].topic`, `children.attached`, `relationships`)
-- [ ] Coggle's current export list (SPA renders nothing server-side)
-- [ ] MindMeister REST API status — deprecated? shut down? still documented?
-- [ ] MindManager exact current pricing (page is JS-rendered)
-- [ ] MyMap.AI pricing tiers (site 403s to automated fetches)
-- [ ] Miro / Mural / FigJam: is there any official mindmap-shaped widget API today?
-- [ ] XMind 3.x open-source history: does any verified repo mirror of the 2008 GPL code exist?
-- [ ] Vendor claim "(v)" cells in the [Interop matrix](#interop-matrix) — confirm import behaviors in-app
-
 ## License
 
 This list's **text** is published under [CC0 1.0](https://creativecommons.org/publicdomain/zero/1.0/); each listed project keeps its own license.
