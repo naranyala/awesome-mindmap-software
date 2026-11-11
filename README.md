@@ -309,6 +309,8 @@ Tree-editing is mind mapping's linear twin; many mappers import/export these for
 
 ### Freeform canvas & "brain" tools
 
+- **[Novastart](https://novastart.com/)** — proprietary (verify) · Web/desktop (verify), active · Infinite canvas workspace for apps, shared canvases, and AI agents; Free plan, Pro $10/month, Team $20/month per user. A freeform workspace rather than a dedicated radial mind-map editor.
+
 - **[TheBrain](https://www.thebrain.com)** — the associative-network category king (see desktop entry above).
 - **[mymind](https://mymind.com)** — 🟢 · Web · Subscription — "Remember everything, organize nothing": private AI-assisted associative space, not a map editor per se.
 - **[Heptabase](https://heptabase.com)** — canvas-based PKM (whiteboard section above).
