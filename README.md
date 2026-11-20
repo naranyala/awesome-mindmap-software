@@ -268,6 +268,7 @@ For embedding mind maps in your own apps. Rendering-approach and dependency deta
 - **[Lucidchart / Lucidspark](https://www.lucidchart.com)** — 🟢 · Freemium (3 docs) — Lucidspark whiteboard has mind-map/freeform clustering; Lucidchart covers structured diagrams incl. concept-map templates.
 - **[Canva Whiteboards](https://www.canva.com)** — 🟢 · Free tier — Built-in free mind-map app type among Canva templates.
 - **[Heptabase](https://heptabase.com)** — 🟢 · Desktop + mobile · Pro $8.99/mo … Premium+ $53.99/mo — Infinite-whiteboard PKM for researchers where notes sit on map-like canvases.
+- **[ZoomMap](https://zoommap.app)** — 🟢 · Web · Freemium — Layered knowledge map: cards nest so the upper layer holds the overview and the layer below holds explanations, examples or evidence from imported sources.
 
 ### AI-powered map generators
 
