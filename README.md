@@ -274,6 +274,7 @@ For embedding mind maps in your own apps. Rendering-approach and dependency deta
 - **[Napkin AI](https://www.napkin.ai)** — 🟢 · Web · Freemium (weekly free credits; PNG/PDF free export, PPT/SVG paid) — Paste text → editable mind maps/flowcharts/infographics; SOC 2 Type II, ISO 27001.
 - **[MyMap.AI](https://mymap.ai)** — 🟢 · Web · Freemium *(verify — 403 to automated fetch)* — One of the original "prompt → map" tools.
 - **[TreeMind (树图)](https://shutu.cn)** — 🟢 · Web + desktop + mobile (Chinese; Shanghai Jushita) · Freemium + VIP — One-sentence-to-mindmap; AI plugin partner of Baidu Ernie, iFlytek Spark, ByteDance Coze; enterprise SDK/API.
+- **[mindmap.io](https://mindmap.io)** — 🟢 · Web · Freemium (3 free maps and 3 AI generations a day; paid from $7/mo) — Develop ideas on a map where any node is an AI chat: branch any answer into follow-ups, and each branch sends its path from the root as context. Models include GPT, Gemini and Claude; images and PDFs attach to nodes as context.
 - OSS/local-first counterparts: [MindGeniusAI](https://github.com/xianjianlf2/MindGeniusAI), [Mind-Map-Wizard](https://github.com/linus-sch/Mind-Map-Wizard), [Neurite](https://github.com/satellitecomponent/Neurite), [KIKUmap](https://github.com/tang1693/KIKUmap).
 - AI topic-expansion is now a standard checkbox inside XMind, EdrawMind, Mindomo, MindMeister, Miro, Whimsical, GitMind, AFFiNE, etc.
 
@@ -418,6 +419,7 @@ The 2025–26 wave: mindmap apps exposing themselves to AI agents.
 - **XMind** — official npm `xmind` SDK, `xmind-embed-viewer`, `@xmindltd/xmind-cli`; community MCP servers: `@41px/mcp-xmind`, `xmind-generator-mcp`, `@lifeng688/xmind-mcp`, `liyilin` variant, etc.
 - **Freeplane** — built-in **MCP server** (official docs §4.5) + Groovy scripting API over `.mm`.
 - **MindNode** — local **MCP server** on macOS (read-only by default, optional agent mutation; one-click Claude Desktop setup).
+- **mindmap.io** — public node API plus a hosted remote **MCP server** (`https://mindmap.io/mcp`, OAuth, works as a Claude connector) and an MIT stdio server, [MohGanji/mindmapio-mcp](https://github.com/MohGanji/mindmapio-mcp); agents can create, read, expand and publish maps.
 - **Miro / Mural / FigJam** — general board/plugin APIs can manipulate shapes (usable for hand-rolled mindmaps) but none expose a dedicated mindmap-node-tree widget API *(verify)*.
 
 ---
